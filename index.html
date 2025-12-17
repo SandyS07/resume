@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+
+  <!-- font added normally -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Poppins, sans-serif;
+    }
+
+    body{
+      background:#ddd;
+      padding:15px;
+    }
+
+    .resume{
+      width:90%;
+      margin:auto;
+      background:white;
+      display:grid;
+      grid-template-columns:260px auto;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    /* left part */
+    .left{
+      background:#8a1b31;
+      color:white;
+      padding:20px;
+    }
+
+    .profile{
+      text-align:center;
+      margin-bottom:20px;
+    }
+
+    .profile img{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      border:3px solid white;
+    }
+
+    .profile h2{
+      font-size:21px;
+      margin-top:10px;
+      font-weight:600;
+    }
+
+    .profile p{
+      font-size:13px;
+    }
+
+    .title{
+      font-size:13px;
+      margin-top:20px;
+      border-bottom:1px solid rgba(255,255,255,0.4);
+      padding-bottom:4px;
+    }
+
+    ul{
+      list-style:none;
+      margin-top:8px;
+    }
+
+    ul li{
+      font-size:13px;
+      margin-bottom:6px;
+    }
+
+    /* right side */
+    .right{
+      padding:25px;
+    }
+
+    .right h3{
+      color:#8a1b31;
+      margin-bottom:8px;
+      font-size:18px;
+    }
+
+    .right p{
+      font-size:14px;
+      line-height:1.6;
+      margin-bottom:15px;
+    }
+
+    .block{
+      margin-bottom:20px;
+    }
+
+    .item h4{
+      font-size:14px;
+      font-weight:500;
+    }
+
+    .item span{
+      font-size:12px;
+      color:#555;
+    }
+
+    /* mobile (not perfect on purpose) */
+    @media(max-width:700px){
+      .resume{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+  <div class="left">
+    <div class="profile">
+      <img src="github.jpg">
+      <h2>Sandesh N. Shingade</h2>
+      <p>Diploma in Computer Engineering</p>
+    </div>
+
+    <div>
+      <div class="title">Contact</div>
+      <ul>
+        <li>📞 9172449337</li>
+        <li>✉️ sandeshshingade77@email.com</li>
+       
+      </ul>
+    </div>
+
+    <div>
+      <div class="title">Skills</div>
+      <ul>
+        <li>C Programming</li>
+        <li>Java Basics</li>
+        <li>DSA</li>
+        <li>HTML CSS</li>
+        <li>Networking</li>
+      </ul>
+    </div>
+
+
+    <div>
+      <div class="title">Hobbies</div>
+      <ul>
+        
+        <li>Anchoring</li>
+        <li>Singing</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="right">
+
+    <div class="block">
+      <h3>Profile</h3>
+      <p>
+        I am a diploma computer engineering student studying at Government Polytechnic Pune.
+        I am interested in software development and networking and want to improve my skills.
+      </p>
+    </div>
+
+    <div class="block">
+      <h3>Education</h3>
+      <div class="item">
+        <h4>Diploma in Computer Engineering</h4>
+        
+      </div>
+      <br>
+      <div class="item">
+        <h4>SSC</h4>
+        
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>Projects</h3>
+      <div class="item">
+        <h4>Airline Ticket Booking System</h4>
+        <span>Using C language</span>
+      </div>
+      <div class="item">
+        <h4>CPU Scheduling Presentation</h4>
+        <span>OS subject micro project</span>
+      </div>
+      <div class="item">
+        <h4>Network Simulation</h4>
+        <span>Cisco Packet Tracer</span>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>Career Goal</h3>
+      <p>
+        To get a good job in IT field and continuously improve my technical knowledge.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
